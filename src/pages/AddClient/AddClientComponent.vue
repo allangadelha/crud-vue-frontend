@@ -59,7 +59,7 @@ export default {
                 phone: this.dataClient.email,
                 address: this.dataClient.address,
             }
-            axios.post('https://crud-vue-frontend.herokuapp.com/api/clients', data, {
+            axios.post('https://crud-vue-backend.herokuapp.com/api/clients', data, {
                 headers: {
                     'Authorization': `Bearer ${this.token}`
                 }
