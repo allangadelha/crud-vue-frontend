@@ -41,7 +41,7 @@ export default {
                 email: this.LoginData.email,
                 password: this.LoginData.password
             }
-            axios.post('http://localhost:3001/api/authenticate', data)
+            axios.post('https://crud-vue-frontend.herokuapp.com/api/authenticate', data)
             .then((res) => {
                 var user = res.data.user;
                 var token = res.data.token;
