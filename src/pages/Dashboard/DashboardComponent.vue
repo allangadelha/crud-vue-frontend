@@ -35,7 +35,7 @@ export default {
 
     methods: {
         async getClients () {
-            await axios.get('http://localhost:3001/api/clients', {
+            await axios.get('https://crud-vue-frontend.herokuapp.com/api/clients', {
                 headers: {
                     'Authorization': `Bearer ${this.token}`
                 }
