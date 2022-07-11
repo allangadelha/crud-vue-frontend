@@ -53,7 +53,7 @@ export default {
     methods: {
         deleteClient(id) {
             if(confirm("Deseja realmente excluir?")){
-                axios.delete(`https://crud-vue-frontend.herokuapp.com/api/clients/${id}`, {
+                axios.delete(`https://crud-vue-backend.herokuapp.com/api/clients/${id}`, {
                     headers: {
                         'Authorization': `Bearer ${this.token}`
                     }
